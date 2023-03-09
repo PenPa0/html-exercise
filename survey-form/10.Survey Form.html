@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+            Survey Form
+        </title>
+    </head>
+    
+    <body>
+        <h1>Employee Interests Surver form</h1>
+
+        <form>
+            <label style="margin-left: 30px;" for="name">Enter your name:</label>
+            <input type="text" id="name"
+            name="name" value=""><br>
+
+            <br>
+
+            <label style="margin-left: 15px;" for="department">Enter your department:</label>
+            <input type="text" id="department"
+            name="department" value=""><br>
+
+            <br>
+
+            <div style="margin-left: 5px;"> <!--this groups the text and textarea instead of having it below and inside-->
+                Tell us a little about yourself:<textarea name="about_self"
+            rows="5" cols="35"></textarea>
+            </div>
+            
+            <br>
+
+            <div style="margin-left: 10%;">
+                Do you exercise at home?
+                <input type="radio" id="yes" name="exercise" value="yes">
+                <label for="yes">Yes</label>
+                <input type="radio" id="no" name="exercise" value="no">
+                <label for="no">No</label>
+            </div><br>
+
+            <p style="margin-left: 6%;">How do you like to read about your favorite topcis?</p>
+
+            <input style="margin-left: 3%;" type="checkbox" id="option1" name="option1" value="Books">
+            <label for="option1">Books</label>
+            <input type="checkbox" id="option2" name="option2" value="Online_resources">
+            <label for="option2">Online resources</label>
+            <input type="checkbox" id="option3" name="option3" value="Phone_apps">
+            <label for="option3">Phone apps</label>
+            <input type="checkbox" id="option4" name="option4" value="Magazines">
+            <label for="option4">Magazines</label><br>
+
+            <br>
+
+            <label style="margin-left: 7%;" for="genre">What genre of movies do you like?</label>
+            <select id="genre" name="genre" size="1">
+                <option value="comedy">comedy</option>
+                <option value="action">action</option>
+                <option value="thriller">thriller</option>
+                <option value="drama">drama</option>
+                <option value="horror">dorror</option>
+                <option value="science_fiction">science fiction</option>
+                <option value="animated_film">animated film</option>
+                <option value="adventure">adventure</option>
+                <option value="fantasy">fantasy</option>
+                <option value="documentary">documentary</option>
+            </select><br>
+            
+            <br>
+
+            <input style="margin-left: 20%;" type="submit"
+            value="Submit form">
+        </form>
+    </body>
+</html>
